@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1:1 Flexible on steroids within locked wrapper</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-146503200-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-146503200-1");
+		</script>
+	</head>
+	<body>
+		<div id="wrapper" class="true">
+			<a href="javascript:void(0)" onClick="gTagAdFrameEvent()">
+				<div id="buffer">
+					<div id="ad">
+						<img src="img/logo.png" id="logo" />
+						<div id="action-box">
+							<h2 id="headline">Something goes here</h2>
+							<div id="cta-wrapper">
+								<div id="cta">cta</div>
+								<div id="value"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<!-- <script type="text/javascript" src="https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js"></script> -->
+		<script src="js/ad.js"></script>
+	</body>
+</html>

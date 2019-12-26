@@ -1,0 +1,37 @@
+{
+	"data": [
+		{
+			"LEAF": 0,
+			"AUDIENCE": "deal_seeker",
+			"SEGMENT_ID": "tbd",
+			"CHANNEL": "desktop",
+			"HEADLINE_1": "Generic fallback headline",
+			"HEADLINE_2": "Enjoy your bonus value on any Ziploc brand item",
+			"CTA": "Save Now",
+			"BACKGROUND_IMAGE": "img/bg00.jpg",
+			"URL": "https://www.officedepot.com/a/products/520824/Ziploc-Double-Zipper-Gal-Storage-Bags/"
+		},
+		{
+			"LEAF": 1,
+			"AUDIENCE": "parent",
+			"SEGMENT_ID": "tbd",
+			"CHANNEL": "desktop",
+			"HEADLINE_1": "Save up to $5",
+			"HEADLINE_2": "Limited 4 per session",
+			"CTA": "Save Now",
+			"BACKGROUND_IMAGE": "img/bg01.jpg",
+			"URL": "https://www.officedepot.com/a/products/520824/Ziploc-Double-Zipper-Gal-Storage-Bags/"
+		},
+		{
+			"LEAF": 2,
+			"AUDIENCE": "foodie",
+			"SEGMENT_ID": "tbd",
+			"CHANNEL": "desktop",
+			"HEADLINE_1": "Buy One Get One",
+			"HEADLINE_2": "Look for cupon on the HEB home page",
+			"CTA": "Save Now",
+			"BACKGROUND_IMAGE": "img/bg02.jpg",
+			"URL": "https://www.heb.com/?exp=instoreview"
+		}
+	]
+}
