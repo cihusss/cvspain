@@ -63,7 +63,7 @@ var avgtempPast;
 
 function getCurrDate() {
 	var request = new XMLHttpRequest();
-	request.open("GET", "http://api.worldweatheronline.com/premium/v1/weather.ashx?q=" + postal + "&format=JSON&num_of_days=1&key=ff6dab2f29a74858b4a213853191812", true);
+	request.open("GET", "https://api.worldweatheronline.com/premium/v1/weather.ashx?q=" + postal + "&format=JSON&num_of_days=1&key=ff6dab2f29a74858b4a213853191812", true);
 	request.onload = function () {
 		if (request.status >= 200 && request.status < 400) {
 			// success!
@@ -98,7 +98,7 @@ function getPastData() {
 function gePastTemp(i) {
 	if (pastYear != null) {
 		var request = new XMLHttpRequest();
-		request.open("GET", "http://api.worldweatheronline.com/premium/v1/past-weather.ashx?q=" + postal + "&format=JSON&date=" + pastYear + "&key=ff6dab2f29a74858b4a213853191812", true);
+		request.open("GET", "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?q=" + postal + "&format=JSON&date=" + pastYear + "&key=ff6dab2f29a74858b4a213853191812", true);
 		request.onload = function () {
 			if (request.status >= 200 && request.status < 400) {
 				// success!
