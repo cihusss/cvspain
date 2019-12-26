@@ -201,7 +201,44 @@ function buildAd(event) {
 
 	// console.log(adWidth + ":" + adHeight);
 
-	//styleAd();
+	styleAd();
 }
 
+// adjust layout & style
+function styleAd(event) {
+	switch (wrapperWidth + wrapperHeight) {
+		// 728x90
+		case 818:
+			document.getElementById("headline").style.fontSize = "20px";
+			document.getElementById("headline").style.marginBottom = "8px";
+			document.getElementById("cta").style.padding = "4px 16px";
+			document.getElementById("action-box").style.width = "auto";
+			document.getElementById("action-box").style.height = "100%";
+			document.getElementById("action-box").style.padding = "12px 16px";
+			break;
 
+		// 970x90
+		case 1030:
+			document.getElementById("action-box").style.flexDirection = "row";
+			document.getElementById("headline").style.alignSelf = "center";
+			document.getElementById("headline").style.fontSize = "18px";
+			document.getElementById("headline").style.margin = "0 12px 0 0";
+			document.getElementById("cta-wrapper").style.alignSelf = "center";
+			document.getElementById("logo").style.width = "36px";
+			document.getElementById("action-box").style.width = "auto";
+			break;
+
+		// 300x50
+		case 350:
+			document.getElementById("headline").style.margin = "0 0 2px 0";
+			document.getElementById("headline").style.fontSize = "10px";
+			document.getElementById("cta").style.padding = "2px 8px";
+			document.getElementById("cta").style.fontSize = "10px";
+			document.getElementById("action-box").style.width = "auto";
+			document.getElementById("action-box").style.padding = "6px 12px";
+			document.getElementById("logo").style.width = "27px";
+			break;
+	}
+
+	document.getElementById("ad").style.opacity = "1";
+}
