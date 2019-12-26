@@ -201,7 +201,7 @@ function buildAd(event) {
 
 	// console.log(adWidth + ":" + adHeight);
 
-	styleAd();
+	//styleAd();
 }
 
 
